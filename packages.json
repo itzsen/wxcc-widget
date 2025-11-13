@@ -1,1 +1,14 @@
 
+{
+  "name": "webex-widget",
+  "version": "1.0.0",
+  "description": "Webex Contact Center Widget",
+  "main": "widget.js",
+  "scripts": {
+    "start": "npx serve"
+  },
+  "dependencies": {
+    "@wxcc-desktop/sdk": "^1.0.0"
+  }
+}
+
