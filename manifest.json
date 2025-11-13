@@ -1,1 +1,9 @@
 
+{
+  "name": "HelloWorldWidget",
+  "version": "1.0.0",
+  "description": "A simple Hello World widget for Webex Contact Center",
+  "entryPoint": "index.html",
+  "permissions": ["desktop"]
+}
+
