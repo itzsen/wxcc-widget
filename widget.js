@@ -1,4 +1,4 @@
-import { Desktop } from 'https://unpkg.com/@wxcc-desktop/sdk/dist/wxcc-desktop-sdk.esm.js';
+import { Desktop } from 'https://cdn.jsdelivr.net/npm/@wxcc-desktop/sdk@2.0.11/dist/index.min.js';
 
 Desktop.config({
   clientId: '<YOUR_CLIENT_ID>',
