@@ -1,13 +1,13 @@
+import { Desktop } from 'https://unpkg.com/@wxcc-desktop/sdk/dist/wxcc-desktop-sdk.esm.js';
 
-import { Desktop } from '@wxcc-desktop/sdk';
-
-// Initialize SDK (replace with your actual client details)
 Desktop.config({
   clientId: '<YOUR_CLIENT_ID>',
   redirectUri: '<YOUR_REDIRECT_URI>'
 });
 
-// Display Hello World
-document.getElementById('message').innerText = 'Hello World from Webex Contact Center!'
+document.getElementById('message').innerText = 'Hello World from Webex Contact Center!';
 
-
+Desktop.agent.getAgentDetails().then(agent => {
+  document.getElementById('agentName').innerText = agent.name || 'Unknown';
+  document.getElementById('agentState').innerText = agent.state || 'Unavailable';
+});
